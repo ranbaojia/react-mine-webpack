@@ -1,0 +1,100 @@
+*{
+  margin:0;
+  padding: 0;
+}
+html,body{
+  width:100%;
+  background-color: #ddd;
+  height: 100%;
+}
+/* 自定义model */
+.qf-model{
+  width: 300px;
+  background-color: #fff;
+  border-radius: 3px;
+
+}
+.jc-Content{
+  .header{
+    height: 55px;
+    line-height: 55px;
+    overflow: hidden;
+  }
+  .tip{
+    float: left;
+  }
+  .close{
+    float: right;
+  }
+  .footer{
+    height: 55px;
+    overflow: hidden;
+   
+  }
+}
+
+.footer span{
+  float: right;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  padding: 0 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top:11px;
+  border:1px solid transparent;
+}
+.cancal{
+   border-color: #eee;
+}
+.cancal:hover{
+  border-color: blue;
+  color: blue;
+}
+.confirm{
+   border-color: blue;
+   background-color:blue ;
+   color: #fff;
+}
+
+.jc-header{
+   height: 50px;
+  //  background-color: rgba(255,255,255);
+  background-color: rgb(0,21,41);
+  color: #fff;
+}
+#app{
+  .jc-left{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0,21,41);
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    .jc-layout{
+      height:1000px;
+      .ant-menu{
+        .ant-menu-submenu{
+          //  一级标题
+          .ant-menu-submenu-title{
+          }
+        }
+        .ant-menu-item{
+           text-align: left;
+            //  二级标题
+           a{
+            margin-left:-24px;
+           }
+        }
+      }
+     
+     }
+  }
+  
+  .jc-right{
+    float: right;
+    height: 50px;
+    width: 80%;
+  }
+}
